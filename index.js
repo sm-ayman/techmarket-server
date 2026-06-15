@@ -7,7 +7,13 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // ── Middleware ──────────────────────────────────────────────────────────────
-app.use(cors({ origin: process.env.CLIENT_URL || "http://localhost:3000" }));
+app.use(cors({ 
+  origin: [
+    "http://localhost:3000", 
+    "https://techmarket-client.vercel.app",
+    process.env.CLIENT_URL
+  ].filter(Boolean)
+}));
 app.use(express.json());
 
 // ── MongoDB Client ──────────────────────────────────────────────────────────

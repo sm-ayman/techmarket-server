@@ -1,0 +1,258 @@
+[
+  {
+    "id": "google-pixel-9-pro",
+    "title": "Google Pixel 9 Pro",
+    "shortDescription": "Google AI, a stunning camera, and an all-day battery.",
+    "description": "Pixel 9 Pro brings the best of Google AI to your pocket with the Tensor G4 chip, a pro-grade triple camera, and Gemini built in.",
+    "price": 999,
+    "category": "Phones",
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "Display": "6.3-inch Super Actua",
+      "Processor": "Google Tensor G4",
+      "Camera": "50MP Triple Pro",
+      "Battery": "All-day Adaptive Battery"
+    }
+  },
+  {
+    "id": "oneplus-12",
+    "title": "OnePlus 12",
+    "shortDescription": "Pro-grade Hasselblad cameras with a blazing 120Hz display.",
+    "description": "The OnePlus 12 pairs the Snapdragon 8 Gen 3 with a 2K 120Hz ProXDR display and a Hasselblad-tuned camera system.",
+    "price": 799,
+    "category": "Phones",
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "Display": "6.82-inch 2K ProXDR 120Hz",
+      "Processor": "Snapdragon 8 Gen 3",
+      "Camera": "50MP Hasselblad Triple",
+      "Battery": "5400 mAh | 100W"
+    }
+  },
+  {
+    "id": "asus-rog-zephyrus-g14",
+    "title": "ASUS ROG Zephyrus G14",
+    "shortDescription": "A powerful gaming laptop in an ultra-portable chassis.",
+    "description": "Zephyrus G14 packs an AMD Ryzen 9 and RTX 4060 into a 14-inch magnesium-alloy body with a 165Hz OLED display.",
+    "price": 1599,
+    "category": "Laptops",
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "Display": "14-inch 3K OLED 165Hz",
+      "CPU": "AMD Ryzen 9 8945HS",
+      "GPU": "NVIDIA RTX 4060",
+      "Weight": "1.5 kg"
+    }
+  },
+  {
+    "id": "dell-xps-15",
+    "title": "Dell XPS 15",
+    "shortDescription": "A creator-focused laptop with an InfinityEdge OLED display.",
+    "description": "The XPS 15 combines a stunning OLED touch display with Intel Core Ultra processing and NVIDIA graphics for creators.",
+    "price": 1899,
+    "category": "Laptops",
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "Display": "15.6-inch OLED Touch",
+      "CPU": "Intel Core Ultra 7",
+      "GPU": "NVIDIA RTX 4050",
+      "RAM": "16GB / 32GB"
+    }
+  },
+  {
+    "id": "sony-wf-1000xm5-earbuds",
+    "title": "Sony WF-1000XM5 Earbuds",
+    "shortDescription": "Best-in-class noise cancelling earbuds in a tiny design.",
+    "description": "WF-1000XM5 wireless earbuds deliver the ultimate listening experience with industry-leading ANC and a 30% smaller design.",
+    "price": 299,
+    "category": "Audio",
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "Type": "True Wireless",
+      "ANC": "Best-in-class",
+      "Battery": "24 Hours Total",
+      "Codec": "LDAC | Hi-Res Audio"
+    }
+  },
+  {
+    "id": "apple-airpods-pro-2",
+    "title": "Apple AirPods Pro 2",
+    "shortDescription": "Up to 2x more Active Noise Cancellation with Adaptive Audio.",
+    "description": "AirPods Pro 2 feature Adaptive Audio, Personalized Spatial Audio, and up to 6 hours of listening on a single charge.",
+    "price": 249,
+    "category": "Audio",
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "Type": "True Wireless",
+      "ANC": "Adaptive",
+      "Battery": "6h + 30h Case",
+      "Chip": "Apple H2"
+    }
+  },
+  {
+    "id": "samsung-galaxy-tab-s9",
+    "title": "Samsung Galaxy Tab S9",
+    "shortDescription": "A flagship tablet built for entertainment and creativity.",
+    "description": "The Galaxy Tab S9 features an AMOLED display, Snapdragon 8 Gen 2, and an included S Pen for a premium tablet experience.",
+    "price": 799,
+    "category": "Tablets",
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1561154464-82e9adf32764?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "Display": "11-inch Dynamic AMOLED 2X",
+      "Processor": "Snapdragon 8 Gen 2",
+      "S Pen": "Included",
+      "IP Rating": "IP68"
+    }
+  },
+  {
+    "id": "galaxy-watch-6",
+    "title": "Samsung Galaxy Watch 6",
+    "shortDescription": "Advanced health tracking in a sleek circular design.",
+    "description": "Galaxy Watch 6 tracks sleep, body composition, and heart health with a brighter Always-On display and improved fitness features.",
+    "price": 299,
+    "category": "Wearables",
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "Display": "1.3-inch Super AMOLED",
+      "Health": "ECG | Body Comp | Sleep",
+      "Battery": "Up to 40 Hours",
+      "Case": "40mm / 44mm"
+    }
+  },
+  {
+    "id": "logitech-g502-x",
+    "title": "Logitech G502 X Plus",
+    "shortDescription": "A wireless gaming mouse with LIGHTSPEED and RGB.",
+    "description": "G502 X Plus combines LIGHTFORCE hybrid switches, the HERO 25K sensor, and LIGHTSYNC RGB for esports-grade performance.",
+    "price": 159,
+    "category": "Accessories",
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "Sensor": "HERO 25K",
+      "Switches": "LIGHTFORCE",
+      "Battery": "Up to 120 Hours",
+      "Wireless": "LIGHTSPEED"
+    }
+  },
+  {
+    "id": "razer-blackwidow-v4",
+    "title": "Razer BlackWidow V4",
+    "shortDescription": "A mechanical keyboard with hot-swap switches and RGB.",
+    "description": "BlackWidow V4 features Razer mechanical switches, a magnetic plush wrist rest, and vibrant Chroma RGB.",
+    "price": 189,
+    "category": "Accessories",
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "Layout": "75% / Full-size",
+      "Switches": "Razer Gen-3",
+      "RGB": "Chroma",
+      "Wrist Rest": "Magnetic Plush"
+    }
+  },
+  {
+    "id": "ps5-slim",
+    "title": "PlayStation 5 Slim",
+    "shortDescription": "Lightning-fast loading with an expansive SSD.",
+    "description": "Experience the PlayStation 5 with 4K gaming, ray tracing, haptic feedback, and a compact new design with 1TB SSD.",
+    "price": 499,
+    "category": "Gaming",
+    "rating": 4.9,
+    "image": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "Resolution": "Up to 8K / 4K 120fps",
+      "Storage": "1TB SSD",
+      "Controller": "DualSense",
+      "Ray Tracing": "Supported"
+    }
+  },
+  {
+    "id": "xbox-series-x",
+    "title": "Xbox Series X",
+    "shortDescription": "The most powerful Xbox with 12 teraflops of power.",
+    "description": "Xbox Series X delivers true 4K gaming, up to 120fps, and lightning-fast load times with Quick Resume.",
+    "price": 499,
+    "category": "Gaming",
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1621259182978-fbf93132d53d?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "Resolution": "4K @ 120fps",
+      "Storage": "1TB NVMe SSD",
+      "Power": "12 Teraflops",
+      "HDR": "Auto HDR"
+    }
+  },
+  {
+    "id": "samsung-odyssey-g9",
+    "title": "Samsung Odyssey G9",
+    "shortDescription": "A 49-inch super-ultrawide monitor with 240Hz refresh.",
+    "description": "Odyssey G9 offers a massive 49-inch Dual QHD curved display with a 240Hz refresh rate and 1ms response for immersive gaming.",
+    "price": 1299,
+    "category": "Displays",
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1547119957-637f8679db1b?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "Size": "49-inch Super-Ultrawide",
+      "Resolution": "Dual QHD 5120x1440",
+      "Refresh": "240Hz",
+      "Curve": "1000R"
+    }
+  },
+  {
+    "id": "dji-air-3",
+    "title": "DJI Air 3",
+    "shortDescription": "Dual cameras and 46 minutes of flight in one drone.",
+    "description": "DJI Air 3 features a dual-primary-camera system, 46-minute max flight time, and omnidirectional obstacle sensing.",
+    "price": 1099,
+    "category": "Drones",
+    "rating": 4.9,
+    "image": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "Video": "4K/60fps HDR",
+      "Flight Time": "46 Minutes",
+      "Sensors": "Omnidirectional",
+      "Cameras": "Dual Primary"
+    }
+  },
+  {
+    "id": "roku-streaming-stick",
+    "title": "Roku Streaming Stick 4K",
+    "shortDescription": "The easiest way to stream 4K content in seconds.",
+    "description": "Stream 4K, HDR10+, and Dolby Vision content from thousands of channels with the powerful Roku Streaming Stick 4K.",
+    "price": 49,
+    "category": "Other",
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "Resolution": "4K HDR10+",
+      "HDR": "Dolby Vision",
+      "Voice": "Voice Remote",
+      "Wi-Fi": "Dual-band"
+    }
+  },
+  {
+    "id": "anker-powercore-26800",
+    "title": "Anker PowerCore 26800",
+    "shortDescription": "Massive 26800mAh capacity with rapid 3-port charging.",
+    "description": "Keep your devices charged all day with 26,800mAh capacity, 3 USB ports, and high-speed charging for phones and tablets.",
+    "price": 69,
+    "category": "Accessories",
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "Capacity": "26800 mAh",
+      "Ports": "3x USB",
+      "Charging": "High-speed",
+      "Compatibility": "Phones & Tablets"
+    }
+  }
+]

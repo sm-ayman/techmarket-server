@@ -138,12 +138,27 @@ async function startServer() {
     const db = client.db(process.env.DB_NAME);
     const productsCollection = db.collection("products");
     const ordersCollection = db.collection("orders");
+    const categoriesCollection = db.collection("categories");
 
     // Seed products if collection is empty
     const count = await productsCollection.countDocuments();
     if (count === 0) {
       await productsCollection.insertMany(SEED_PRODUCTS);
       console.log(`🌱 Seeded ${SEED_PRODUCTS.length} products into MongoDB.`);
+    }
+
+    // Seed default categories if collection is empty
+    const categoryCount = await categoriesCollection.countDocuments();
+    if (categoryCount === 0) {
+      const defaultCategories = ["Phones", "Laptops", "Audio", "Tablets", "Wearables", "Accessories", "Gaming", "Displays", "Drones", "Other"];
+      await categoriesCollection.insertMany(
+        defaultCategories.map((name) => ({
+          name,
+          slug: name.toLowerCase().replace(/[^a-z0-9]+/g, "-"),
+          createdAt: new Date(),
+        }))
+      );
+      console.log(`🌱 Seeded ${defaultCategories.length} categories into MongoDB.`);
     }
 
     // ── Health Check ──────────────────────────────────────────────────────
@@ -256,6 +271,70 @@ async function startServer() {
       } catch (err) {
         console.error(err);
         res.status(500).json({ error: "Failed to delete product" });
+      }
+    });
+
+    // ════════════════════════════════════════════════════════════════════════
+    // CATEGORIES ROUTES
+    // ════════════════════════════════════════════════════════════════════════
+
+    // GET /categories — All categories
+    app.get("/categories", async (req, res) => {
+      try {
+        const categories = await categoriesCollection
+          .find()
+          .sort({ name: 1 })
+          .toArray();
+        res.json(categories);
+      } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: "Failed to fetch categories" });
+      }
+    });
+
+    // POST /categories — Create a new category
+    app.post("/categories", async (req, res) => {
+      try {
+        const { name } = req.body;
+        if (!name || !name.trim()) {
+          return res.status(400).json({ error: "Category name is required" });
+        }
+
+        const trimmed = name.trim();
+        const slug = trimmed.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+
+        const result = await categoriesCollection.updateOne(
+          { slug },
+          {
+            $setOnInsert: { name: trimmed, slug, createdAt: new Date() },
+          },
+          { upsert: true }
+        );
+
+        const category = await categoriesCollection.findOne({ slug });
+        if (result.upsertedCount === 0) {
+          return res.status(409).json({ error: `Category "${trimmed}" already exists`, category });
+        }
+        res.status(201).json(category);
+      } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: "Failed to create category" });
+      }
+    });
+
+    // DELETE /categories/:slug — Delete a category
+    app.delete("/categories/:slug", async (req, res) => {
+      try {
+        const { slug } = req.params;
+        const result = await categoriesCollection.deleteOne({ slug });
+
+        if (result.deletedCount === 0) {
+          return res.status(404).json({ error: "Category not found" });
+        }
+        res.json({ success: true, message: `Category '${slug}' deleted.` });
+      } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: "Failed to delete category" });
       }
     });
 
